@@ -1,5 +1,5 @@
 /*This algorithm implements the basic idea to sort numbers, and then subtract to k the cardinality of sets of equal pairs, sorted in 
-lexicographical order (first row by row, then cell by cell). Space and time are both linear.*/
+lexicographical order (first row by row, then cell by cell). Space is linear, and time is O(nlog(n)).*/
 
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
