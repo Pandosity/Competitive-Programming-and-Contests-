@@ -1,3 +1,6 @@
+/*We just compute a boolean vector with true if s_i = s_(i+1), and compute its prefix sums. 
+Answer is then a difference of entries of this array. Space and time consumption are linear */
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
