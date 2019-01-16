@@ -1,4 +1,5 @@
-/*The algorithm here, which implements the solution showed in the slide. Time and space consumption are both O(n)*/
+/*The algorithm here, which implements the solution showed in the slide, is explained via comments
+in the code. Time and space consumption are both O(n)*/
 
 #include <iostream>
 #include <vector>
