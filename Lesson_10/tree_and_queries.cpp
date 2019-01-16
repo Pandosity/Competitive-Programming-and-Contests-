@@ -1,3 +1,6 @@
+/*We linearize the tree by using a DFS, and once we have a linear vector we can just use Mo's algorithm to complete the task in O(sqrt(n)*(n+m)).
+Space complexity is linear, that is O(n+m).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
