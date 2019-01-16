@@ -1,3 +1,5 @@
+/*Space and time consumption are both linear.*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
