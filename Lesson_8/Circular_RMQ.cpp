@@ -1,3 +1,5 @@
+/*The solution here simply implements a lazy update segment tree. Space is linear, whilst time is O(queries*log(n)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
