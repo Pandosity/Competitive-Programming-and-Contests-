@@ -1,3 +1,6 @@
+/*We sort the partecipants by strength, and then select the teams greedily. Space and time consumption are
+both O(N^2) where N is the number of teams to be formed.*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
