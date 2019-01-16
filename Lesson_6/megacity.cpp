@@ -1,3 +1,6 @@
+/*This algorithm just sorts towns by radius and then selects them greedily. Space is linear, time is
+O(towns*log(towns)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 
@@ -25,9 +28,7 @@ int main(){
 	}
 	
 	sort(locations.begin(), locations.end(), sorter);
-	//for(int i = 0; i < towns; ++i){
-	//	dbg(locations[i].first);
-	//}
+	
 	int i = 0;
 	double result = -1;
 	
