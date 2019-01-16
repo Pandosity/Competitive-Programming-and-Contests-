@@ -1,3 +1,6 @@
+/*The cool trick of this solution is to implement a merge sort, and sort the array via it. Each time the integers get their position with 
+respect to the merging halves swapped during the merging, we add 1 to our inversion count. Algorithm runs in O(n*log(n)) time and linear space.*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
