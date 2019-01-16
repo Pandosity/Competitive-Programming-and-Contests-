@@ -1,3 +1,5 @@
+/*We implement the solution explained in the course page. Space is O(n), time is O(n*log(n)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
@@ -49,10 +51,6 @@ int main(){
 		}
 		++i;
 	}
-	
-	//for(ll y = 0; y < n; ++y){
-	//	dbg(heaps[y]);
-	//}
 	
 	ll max = counter[0]*counter[1];
 	
