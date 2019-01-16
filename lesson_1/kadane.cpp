@@ -2,6 +2,9 @@
 #include <vector>
 #include <algorithm>
 
+/*The algorithm implemented here scans the array forward, at each step updating two integers, the global max and the current local 
+maximum. The global maximum at the end of the algorithm is the answer to the problem. Space and time complexities are O(n).*/
+
 int main(){
 	int test_cases=0;
 	std::cin >> test_cases;
