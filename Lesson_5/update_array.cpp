@@ -1,3 +1,6 @@
+/*This algorithm implements the standard fenwick tree data structure. Space consumption is linear. Time consumption
+is O(nlog(n)) to build the initial array, O(updates*log(n)) to perform the updates and O(queries*log(n)) to get the results.*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 
