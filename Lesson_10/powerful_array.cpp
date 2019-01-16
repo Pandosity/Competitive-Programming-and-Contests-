@@ -1,3 +1,5 @@
+/*This code is a standard implementation of Mo's algorithm. Space complexity is O(n+q), and time complexity is O(sqrt(n)*(n+q)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
@@ -81,22 +83,18 @@ int main(){
 	
 	for(ll i=0;i<q;++i){
 		while(curr_l < queries[i].start){
-			//dbg(1);
 			remove(curr_l);
 			++curr_l;
 		}
 		while(curr_l > queries[i].start){
-			//dbg(2);
 			--curr_l;
 			add(curr_l);
 		}
 		while(curr_r < queries[i].end){
-			//dbg(3);
 			++curr_r;
 			add(curr_r);
 		}
 		while(curr_r > queries[i].end){
-			//dbg(4);
 			remove(curr_r);
 			--curr_r;  
 		}
