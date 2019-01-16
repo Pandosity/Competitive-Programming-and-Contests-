@@ -1,3 +1,6 @@
+/*This algorithm first fills a boolean vector from 0 to 2n-1 with 1 in position i if i+1 is prime, 0 otherwise. 
+Superiors are then counted greedily in linear time. Space consumption is O(n), time consumption is O(n^(3/2)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout << #x << ": " << x << endl;
 using namespace std;
