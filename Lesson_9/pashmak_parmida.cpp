@@ -1,3 +1,5 @@
+/*This algorithm implements the solution explained in the lecture notes. Space complexity is O(n), time complexity is O(n*log(n)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
@@ -25,17 +27,17 @@ struct fenwick_tree {
 };
 
 ll remap(vector<ll>& vet) {
-	ll n=vet.size();
+	ll n = vet.size();
 	vector<ll> tmp(n);
-	copy(vet.begin(),vet.end(),tmp.begin());
-	sort(tmp.begin(),tmp.end());
+	copy(vet.begin() , vet.end() , tmp.begin());
+	sort(tmp.begin() , tmp.end());
 	map<ll,ll> rank;
-	ll r=0,i=0;
-	while (i<n) {
-		rank.insert(make_pair(tmp[i],r++));
-		while (tmp[i]==tmp[++i] && i<n) {};
+	ll r = 0 , i = 0;
+	while (i < n) {
+		rank.insert(make_pair(tmp[i] , r++));
+		while (tmp[i] == tmp[++i] && i<n) {};
 	}
-	for (ll i=0;i<n;i++) vet[i] = rank[vet[i]];
+	for (ll i = 0 ; i < n ; i++) vet[i] = rank[vet[i]];
 	return r;
 }
 
