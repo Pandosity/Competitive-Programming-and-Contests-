@@ -1,3 +1,6 @@
+/*We simply sort the array and then proceed to scan it forward, trivially updating the requested numbers. Space consumption is
+O(n), time consumption O(n*log(n)) because we need to sort the array.*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
