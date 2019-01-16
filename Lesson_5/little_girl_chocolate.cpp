@@ -1,3 +1,4 @@
+/*Space complexity of this algorithm is O(n + queries). Time complexity is O(nlog(n)+queries).*/
 
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
