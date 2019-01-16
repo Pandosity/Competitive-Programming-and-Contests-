@@ -1,3 +1,6 @@
+/*This algorithm implements the solution explained in the course page, that is fenwick tree plus clever sorting of the segments.
+The space complexity is O(n), while the time complexity is O(n*log(n)) */
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 
