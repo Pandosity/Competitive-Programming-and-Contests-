@@ -1,3 +1,6 @@
+/*This algorithm checks the BST property recursively in the obvious way, comparing maxima and minima of left and right 
+subtrees respectively. Time and space consumptions are linear in the number of vertexes.*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
