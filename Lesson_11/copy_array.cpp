@@ -1,3 +1,5 @@
+/*Solution is a standard segment tree (non-lazy for simplicity). Space is O(n+m), and time is O((n+m)*log(n)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 using namespace std;
