@@ -1,3 +1,6 @@
+/*The solution here uses a fenwick tree on which we implement the classical "inversion count" soulution twice,
+counting triplets by fixing their middle value. Space is O(n), and time is O(n*log(n)).*/
+
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
 
