@@ -1,3 +1,7 @@
+/*This algorithm implements the greedy strategy of maximizing each time the reachable range one can get to by landing
+into a given tile. Time and space are both O(n). This code returns an error on Geeks4Geeks for an high test case (n = 84) 
+which works perfectly in my local environment. Iwas guessing this was some sort of initialization problem, but that does
+not seem to be the case since I think I initialized all that I could.*/
 
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
@@ -27,10 +31,7 @@ int main(){
 		ll jumper = 0;
 		ll max_steps = A[0];
 		bool flag = false;
-		if(n == 84){
-			cout << 2 << endl;
-			return 0;
-		}
+
 		while(jumper + max_steps < n-1){
 			count++;
 			ll aux = jumper;
