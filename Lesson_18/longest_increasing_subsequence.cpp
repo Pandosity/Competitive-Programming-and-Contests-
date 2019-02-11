@@ -1,7 +1,10 @@
-/*This algorithm implements the following dynamic routine: at the i-th step we compute the "optimal" LIS buildable with the first i integers,
-where with optimal we mean that at each step we append the new value to the current LIS if it's greater than every value stored, and otherwise
-we change the integer at position lower_bound with x, getting the sequence to which it is easiest to append new values. lower_bound has complexity log(n),
-so time complexity is O(n*log(n)). Space complexity is linear in n.*/
+/*This algorithm implements the dynamic routine in which the i-th subproblem is the length of the longest possible LIS that strictly uses
+the i-th entry of the array. This is achieved by using lower_bound to examine the currently stored LIS, and substituting the current value
+to it unless the new value is appendable at the end. This will destroy the correct subsequences for the subproblems (for example, correct
+solution to the i-th subproblem appears only after substituiting it to the i-th lower bound as the values up to the substituted one, and
+possibly gets changed afterwards) as we process the remaining values, but in the end we just care about the length of the final LIS. Using the
+of the lower_bound saves us some time compared to the naive implementation of the dynamic routine described, making so that time is O(n*log(n))
+and space is O(n).*/
 
 #include<bits/stdc++.h>
 #define dbg(x) cout<<#x<<": "<<x<<endl;
